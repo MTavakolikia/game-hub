@@ -11,7 +11,7 @@ const GenreList = ({ selectedGenre, onSelectGenre }: Props) => {
     const { data, isLoading } = useGenres();
     return (
         <>
-            <Heading font-size='2xl' marginBottom={3}>Genre</Heading>
+            <Heading font-size='2xl' marginBottom={3}>Genres</Heading>
             <List spacing={3} paddingX={2}>
                 {isLoading && <Spinner />}
                 {data.map(genre =>
