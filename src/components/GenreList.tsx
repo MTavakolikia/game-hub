@@ -22,7 +22,15 @@ const GenreList = ({ selectedGenre, onSelectGenre }: Props) => {
                             objectFit='cover'
                             src={getCroppedImageUrl(genre.image_background)}
                         />
-                        <Button whiteSpace="normal" textAlign='left' fontWeight={genre.id === selectedGenre?.id ? "bold" : "normal"} fontSize='lg' onClick={() => onSelectGenre(genre)} variant='link'>{genre.name}</Button>
+                        <Button
+                            whiteSpace="normal"
+                            textAlign='left'
+                            fontWeight={genre.id === selectedGenre?.id ? "bold" : "normal"}
+                            fontSize='lg'
+                            onClick={() => onSelectGenre(genre)}
+                            variant='link'>
+                            {genre.name}
+                        </Button>
                     </HStack>
 
 
